@@ -1,0 +1,33 @@
+-- Documentacion:
+https://bshaffer.github.io/oauth2-server-php-docs/
+
+-- Identifiacion por credenciales del client
+http://slim.oauth2.site:8084/generateToken 
+grant_type=client_credentials&client_id=testclient&client_secret=testpass
+
+
+-- Validar el token con el header
+http://slim.oauth2.site:8084/validateToken
+Authorization: Bearer 20ff406ae9d6abb4445d2faee8f92e37cb36a2a7
+
+-- Authorization Code:
+http://slim.oauth2.site:8084/auth?response_type=code&client_id=client_one&redirect_uri=http://slim.oauth2.site:8084/pages/recibecode&state=xyz
+
+-- User Credentials
+http://slim.oauth2.site:8084/generateToken 
+grant_type=password&client_id=testclient&username=usuario_one&password=p%40ss2019&client_secret=testpass
+
+-- Refresh Token
+http://slim.oauth2.site:8084/generateToken 
+grant_type=refresh_token&refresh_token=33e7a5c3088c3900d9b884e0016cffbae2556e65&client_id=testclient&client_secret=testpass
+
+-- Peticion para cambiar el codigo de autorizacion por un token acceso
+Codigo generado:a74dca84cb488aac27e5468a6918d5c8fbeb5458
+
+http://slim.oauth2.site:8084/generateToken 
+code=a74dca84cb488aac27e5468a6918d5c8fbeb5458&grant_type=authorization_code&client_id=client_one&client_secret=pass2019&redirect_uri=http%3A%2F%2Fslim.oauth2.site%3A8084%2Fpages%2Frecibecode
+
+-- JWT Bearer
+http://slim.oauth2.site:8084/token
+
+grant_type=client_credentials&client_id=client_one&client_secret=pass2019

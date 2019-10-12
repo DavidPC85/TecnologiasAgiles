@@ -1,0 +1,58 @@
+* Composer es un manejador de dependencias, no un gestor de paquetes. 
+Aunque trata con paquetes y librerías, la instalación siempre es local para cualquier proyecto, 
+las librerías se instalan en un directorio por defecto (normalmente es /vendor). 
+Composer es capaz de instalar las librerías que requiere el proyecto con las versiones correspondientes.
+
+$ composer about
+$ composer archive
+$ composer browse
+$ composer clear-cache
+$ composer config --list
+$ composer create project laravel/laravel
+$ composer depends vendor/package
+$ composer diagnose
+$ composer dump-autoload --optimization
+$ composer global
+$ composer help
+$ composer init
+$ composer install
+$ composer licenses
+$ composer list
+$ composer remove
+$ composer require vendor/package
+$ composer run-script
+$ composer search my keywords
+$ composer self-update
+$ composer show
+$ composer status
+$ composer update
+$ composer validate
+
+$ composer init
+	Comando para iniciar un nuevo proyecto como el nombre del paquete, descripción, autor(es), página del proyecto, y las dependencias.
+
+$ composer install
+	Procesa el archivo composer.json y resuelve las dependencias, normalmente las instala en un directorio llamado /vendor.
+
+$ composer update
+	Actualiza las dependencias del proyecto a la última versión y también actualiza el archivo composer.lock 
+	Es posible  actualizar una dependencia en específico:
+	$ composer update vendor/package another-vendor/another-package vendor-x/package-x
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+-- Navegar hasta la carpeta del proyecto y luego instalar el paquete via composer
+
+composer require firebase/php-jwt
+
+composer require illuminate/database
+
+-- Opcional en caso que se agregue el nodo autoload en archivo composer.json
+composer dump-autoload
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+-- Para la instalacion de slim al proyecto, ejecutar:
+composer require slim/slim "^3.12"
+
+-- Instalar un proyecto base de slim 3.
+-- composer create-project slim/slim-skeleton [my-app-name]
