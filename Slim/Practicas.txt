@@ -1,0 +1,29 @@
+Listado de practicas a realizar:
+
+SLIM Framework 
+1.- Instalar SLIM Framework via composer o copiar el proyecto "slim-dummy" y crear un host virtual desde XAMPP:
+	composer.phar create-project slim/slim-skeleton [my-app-name]
+	
+2.- Crear la base de datos "desarrollo" en mysql y crear la estructura de datos para territorios. 
+	Se utilizara la estructura de datos de las base de datos "seguridad" para la interaccion con OAuth2.
+
+
+3.- Generar un group(route) con los respectivos servicios para consultar(get), 
+	guardar(post), actualizar(put) y eliminar(delete) para la tabla "municipio".
+
+4.- Agregar un esquema de seguridad para el api generado con anterioridad para la tabla "municipio".  	
+
+
+
+APIGILITY
+1.- Instalar APIGILITY via composer, replicando el proyecto "apigility-api" o descomprimir el archivo "zf-apigility-skeleton-1.5.1"
+y crear un host virtual desde XAMPP.
+composer create-project zfcampus/zf-apigility-skeleton [my-app-name]
+
+2.- Generar un API "territorio" desde Interfaz de Apigility y agregar un servicio rest para la tabla "municipio".
+	Agregar los servicios GET, POST, PUT Y DELETE para la tabla mencionada.
+
+3.- Generar un adapter "Authentication" para la interaccion con el esquema oAuth2.
+
+4.- Agregar un esquema de seguridad para el api generado con anterioridad para la tabla "municipio".
+
