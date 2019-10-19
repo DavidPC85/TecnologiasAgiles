@@ -1,0 +1,5 @@
+-- Inicio Autorizacion Code
+http://slim.dummy:8084/seguridad/authcode?response_type=code&client_id=client_one&redirect_uri=http://slim.dummy:8084/seguridad/recibecode&state=xyz
+
+-- Callback para procesar la respuesta oAuth
+http://slim.dummy:8084/seguridad/recibecode

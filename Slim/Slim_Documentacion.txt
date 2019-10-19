@@ -1,0 +1,3 @@
+http://docs.slimframework.com/start/get-started/
+https://manuais.iessanclemente.net/index.php/Introduccion_a_API_REST_y_framework_Slim_de_PHP
+https://www.slimframework.com/docs/v3/cookbook/database-eloquent.html
