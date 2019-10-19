@@ -1,0 +1,6 @@
+-- Documentacion
+https://apigility.org/documentation/intro/installation
+
+-- Via composer
+$ composer create-project zfcampus/zf-apigility-skeleton [PATH]
+

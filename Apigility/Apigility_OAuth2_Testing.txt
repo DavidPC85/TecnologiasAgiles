@@ -1,0 +1,54 @@
+-- Grant Type: client_credentials
+POST : http://apigility.base:8084/oauth
+grant_type=client_credentials&client_id=apigility_client&client_secret=pass2019
+
+-- Flujo de Autorizacion Code, GET|BROWSER
+http://apigility.base:8084/oauth/authorize?response_type=code&client_id=apigility_client&redirect_uri=/oauth/receivecode&state=xyz
+
+INSERT INTO seguridad.oauth_clients(client_id, client_secret, redirect_uri, grant_types, `scope`, user_id, dtfechacreacion)
+VALUES('apigility_client', 'pass2019', '/oauth/receivecode', null, null, null, CURRENT_TIMESTAMP);
+
+INSERT INTO seguridad.oauth_clients(client_id, client_secret, redirect_uri, grant_types, `scope`, user_id, dtfechacreacion)
+VALUES('apigility_client2', '', '/oauth/receivecode', null, null, null, CURRENT_TIMESTAMP);
+
+
+-- Obtener un token con el codigo de autorizacion
+http://apigility.base:8084/oauth?grant_type=authorization_code&code=5e3be4e2d52de00bcb548ba86eaa1135cd6a6dc0&client_id=apigility_client&client_secret=pass2019&redirect_uri=%2Foauth%2Freceivecode
+
+
+-- Verificar algun recurso(API) despues de la obtencion de token
+GET: http://apigility.base:8084/oauth/resource
+Authorization: Bearer 0378a36b7465d04316a31c263f6f1e9b63677f0e
+
+Grant Type: client_credentials
+POST : http://apigility.base:8084/oauth
+grant_type=client_credentials&client_id=apigility_client&client_secret=pass2019
+
+-- Grant Type:Implicit Code [BROWSER]
+GET: http://apigility.base:8084/oauth/authorize?response_type=token&client_id=apigility_client&redirect_uri=/oauth/receivecode&state=xyz
+
+
+Grant Type: client_credentials[BROWSER]
+GET: http://apigility.base:8084/oauth/authorize?response_type=token&client_id=apigility_client&redirect_uri=/oauth/receivecode&state=xyz
+-- Ojo habilitar la opcion  zf-oauth2' => ['allow_implicit' => true ] en archivo module.config.php
+
+http://apigility.base:8084/oauth/receivecode#access_token=b2867cc9885e69114ae7bef9231671851fedb79a&expires_in=3600&token_type=Bearer&scope=all-access+all-one&state=xyz
+
+
+Grant Type: Password 
+http://apigility.base:8084/oauth
+grant_type=password&username=david.pech&password=pass2019&client_id=apigility_client&client_secret=pass2019
+grant_type=password&username=david.pech&password=pass2019&client_id=apigility_client2
+
+Grant Type: Refresh Token
+POST : http://apigility.base:8084/oauth
+{
+    "grant_type": "refresh_token",
+    "refresh_token": "f061d83d29b94e0558f402e2d3957ced27846b40",
+    "client_id": "apigility_client",
+    "client_secret": "pass2019"
+}
+
+
+-- Documentacion
+https://apigility.org/documentation/auth/authentication-oauth2
