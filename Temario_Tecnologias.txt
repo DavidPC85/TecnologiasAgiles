@@ -1,0 +1,68 @@
+Instalación, configuración y administración de Base datos Oracle
+•	Instalación y creación de instancias de Base de datos Oracle
+•	Configuraciones post instalación y verificación de disponibilidad de servicios
+•	Administración de usuarios y roles
+•	Gestión de rendimiento de Base de datos
+•	Copias de seguridad y recuperación de datos
+•	Gestión de base de datos desde SQL* Plus(Comandos)
+•	Implantación y administración de Auditorias en Oracle
+•	Configuración de entorno de red y administración de Listeners
+•	Desbloqueo de usuario y restablecimiento de contraseñas
+•	Programación PL/SQL, Bloques anónimos, Procedures y Packages
+
+Open API Authentication 2.0 con PHP
+•	Descripción y Conceptos generales de la arquitectura OAuth 2.0
+•	JSON Web Tokens y OAuth 2.0
+•	Implementación de servicios de Autentificación
+
+Apigility
+•	Instalación Apigility y descripción de conceptos generales
+•	Creación de un API Rest y administración de la estructura MVC del proyecto
+•	Implementación de seguridad y Autentificación para Api Rest Apigility
+
+Slim Framework
+•	Instalación de Slim Framework vía Composer
+•	Creación Api Rest e Implementación ORM Eloquent para acceso a Base de datos
+•	Implementación de seguridad y Autentificación para Api Rest Slim Framework
+
+Programación con Node Js y Angular
+•	Instalación y configuración de Node JS
+•	Instalación de Express y creación de servidor de aplicaciones
+•	Creación rutas y gestión de parámetros para los servicios en NodeJS
+•	Creación y administración de módulos
+•	Implementación de API Restful con Mysql
+•	Instalación Angular y descripción de conceptos generales
+•	Estructura de un componente, módulo y plantillas
+•	Directivas, binding y eventos en Angular
+•	Routing y Navegación en Angular
+•	Servicios, Http y Ajax dentro de Angular
+
+Business Intelligence con Power BI
+•	Definición y conceptos Básicos
+•	Instalación y configuración de orígenes de datos en Power BI
+•	Creación de Dashboard y visualizaciones de datos en Power BI
+
+Programación en Lenguaje Java
+•	Manejo Excepciones
+•	Manejo de Cadenas y Entradas/Salidas
+•	Elementos genéricos y colecciones
+•	Manejo de Hilos de Ejecución
+•	Interfaz Gráfica en Java(GUI)
+
+Bases de Datos en Java e Introducción a Hibernate – 5 Hrs.
+•	Aspectos básicos de Hibernate
+•	Mapeos O/R
+•	Aspectos avanzados de Hibernate
+
+Programación Web con Java
+•	Estructura de aplicaciones Web con Java
+•	Manejo de Servlets
+•	Manejo de JSP
+•	Introducción al Modelo MVC en una aplicación con JSP y Servlets
+
+Introducción a Spring Framework en Aplicaciones Web con Java
+•	Aspectos básicos de Spring Framework
+•	Spring AOP
+•	Spring DAO
+•	Spring Web
+•	Aspectos avanzados en Spring Framework
