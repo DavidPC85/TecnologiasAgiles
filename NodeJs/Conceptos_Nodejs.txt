@@ -1,0 +1,24 @@
+-- Conceptos de Node js
+
+Node.js es una librería y entorno de ejecución de E/S dirigida por eventos 
+y por lo tanto asíncrona, que se ejecuta sobre el intérprete de JavaScript creado por Google V8. 
+
+Es de código abierto diseñado para generar aplicaciones web de forma altamente optimizadas. 
+Su implementación y distribución inicio en 2009.
+
+Documentación: https://nodejs.org/es/
+
+Node Package Manager(npm) es un gestor de paquetes que viene incluido en la instalacion de Node.
+Permite la obtención y descarga de paquetes para que los proyectos no inicien desde cero.
+
+Repositorio de paquetes: https://www.npmjs.com/
+
+	-- Sintaxis para la instalación de algún paquete:
+	> npm install nombre_paquete@version
+	
+	-- Comando para actualizar las librerías
+	> npm install update	
+
+Express.js es un framework para Node.js que sirve crear aplicaciones web en menos tiempo, ya que proporciona funcionalidades como el enrutamiento, opciones para gestionar sesiones y cookies.
+	
+Documentación: https://expressjs.com/

@@ -1,0 +1,49 @@
+Listado de actividades para interaccion con NodeJS
+
+1.- Descargar o ejecutar el instalador compartido de Nodejs[https://nodejs.org/es/]
+	1.1 Para distribuciones basadas en Debian, ejecutar:
+	$ sudo apt-get update
+	$ sudo apt-get install node
+	$ sudo apt-get install nodejs
+	
+2.- Probar si la instalacion se realizó correctamente. En una consola cmd o bash, ejecutar:
+	> node -v
+	> npm  -v
+	> node 
+		>> 5 + 4 \n
+		>> console.log('testing node') \n
+		
+	-- Salir de la consola de node:
+	> .exit
+	
+3.- Crear una carpeta de trabajo para codigo en nodejs : "D:\Desarrollo\NodeJsCode"
+	
+	3.1 Copiar el archivo "server-test.js" en la carpeta de trabajo previamente generada.
+	3.2 Navegar desde cmd a la carpeta de trabajo y ejecutar: node server-test.js 
+	
+	
+4.- Iniciar un nuevo proyecto y descargar dependencias.
+	4.1 Navegar hasta la carpeta root del proyecto
+	
+	-- Comando para inciar un nuevo royecto y capturar informacion básica
+	> npm init
+
+	-- Instalar paquete express para las aplicaciones webs y apis
+	> npm install express --save
+	
+	-- Instalar paquete body-parser para procesamiento de datos en los request
+	> npm install body-parser --save
+	
+	-- Instalar paquete para la interaccion con mysql
+	> npm install mysql –-save
+	
+	-- Instalar paquete para la encriptacion
+	> npm install sha1 --save
+	
+	-- Installar el package para interaccion con oracle
+	> npm install oracledb
+	
+5.- Generar un servicio get y post utilizando la sintaxis de express.
+
+6.- Generar un api rest(get, post, put y delete) para el catalogo de entidades federativas.
+

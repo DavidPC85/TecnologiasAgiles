@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "ffec6084-c21f-42f8-92bd-96e9683170b5",
+		"name": "app-node-rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get - api/pais",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3002/api/pais",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"pais"
+					]
+				},
+				"description": "get - api/pais"
+			},
+			"response": []
+		},
+		{
+			"name": "post - api/pais",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cclave\":\"XYZ\",\n\t\"cnombre\":\"Mi pais\"\n\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3002/api/pais",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"pais"
+					]
+				},
+				"description": "post - api/pais"
+			},
+			"response": []
+		},
+		{
+			"name": "put - api/pais",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "cclave",
+							"value": "ABC",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3002/api/pais/250",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"pais",
+						"250"
+					]
+				},
+				"description": "put - api/pais"
+			},
+			"response": []
+		},
+		{
+			"name": "delete - /api/pais",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3002/api/pais/250",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"pais",
+						"250"
+					]
+				},
+				"description": "delete - /api/pais"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

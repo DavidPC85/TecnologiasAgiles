@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS desarrollo.bitacora(
+	iidbitacora 	INT NOT NULL AUTO_INCREMENT,
+	cip 			VARCHAR(32) NOT NULL, 
+	cevento 		VARCHAR(128) NOT NULL,
+	cobservacion	VARCHAR(512) NOT NULL,
+	dtcreacion 	TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY(iidbitacora)
+) ENGINE = InnoDB;

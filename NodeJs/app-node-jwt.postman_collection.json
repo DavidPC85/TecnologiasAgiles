@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "d99cc45c-6653-4378-95d9-ec0ab1e53ac3",
+		"name": "app-node-jwt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post - /seguridad/tokenjwt",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usuario",
+							"value": "david.pech",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "pass2019",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/seguridad/tokenjwt",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"seguridad",
+						"tokenjwt"
+					]
+				},
+				"description": "post - /seguridad/tokenjwt"
+			},
+			"response": []
+		},
+		{
+			"name": "get - seguridad/tokenjwt",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoiZGF2aWQucGVjaCIsImlhdCI6MTU3MjA2MTY0NywiZXhwIjoxNTcyMDYxNzY3fQ.kHzE3ijz4BQDCrIKGDQozXMhVBhU662CFxprd_p268Q",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:3000/seguridad/tokenjwt",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"seguridad",
+						"tokenjwt"
+					]
+				},
+				"description": "get - seguridad/tokenjwt"
+			},
+			"response": []
+		},
+		{
+			"name": "get - api/codigospostales",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjoiZGF2aWQucGVjaCIsImlhdCI6MTU3MjA2MjIwNCwiZXhwIjoxNTcyMDYyMzI0fQ.v2w7cooSKaa7QVYgvb4i9S1gAI-lArcRziw07PEnhnY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/codigospostales",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"codigospostales"
+					]
+				},
+				"description": "get - api/codigospostales"
+			},
+			"response": []
+		},
+		{
+			"name": "post - api/demo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usuario",
+							"value": "david.pech",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/demo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"demo"
+					]
+				},
+				"description": "post - api/demo"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
